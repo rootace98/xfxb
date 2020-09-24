@@ -1,0 +1,95 @@
+/* 公共代码 */
+body,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	background-color: #eeeeee;
+}
+
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.clear{
+	zoom: 1;
+}
+
+li{
+	list-style: none;
+}
+
+a {
+	/*去除下划线*/
+	text-decoration: none;
+}
+
+img {
+	vertical-align: top;
+	border: 0;
+}
+
+input,
+select,
+button,
+textarea{
+	outline: none;
+}
+
+textarea{
+	resize: none;
+}
+
+input[type="buttonn"],
+input[type="submit"],
+input[type="file"]{
+	cursor: pointer;
+}
+
+input::webkit-input-placeholder{
+	/* WebbKit browsers */
+	color: #ddd;
+}
+
+input::-moz-placeholder{
+	/* Mozilla Firefox 19+ */
+	color: #DDDDDD;
+}
+
+input:-moz-placeholder{
+	/* Mozilla Firefox 4 to 18+ */
+	color: #DDDDDD;
+}
+
+input:-ms-input-placeholder{
+	/* Internet Explorer 10+ */
+	color: #DDDDDD;
+}
